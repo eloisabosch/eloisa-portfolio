@@ -1,0 +1,5 @@
+/* Galería de cada proyecto: todas las imágenes del MISMO tamaño.
+   Para cambiar la proporción: 1/1 cuadrado, 4/5 vertical, 3/2 horizontal. */
+:root{--tile:4/5}
+body .gal{grid-template-columns:repeat(auto-fill,minmax(260px,1fr))}
+body .gal img{width:100%;height:auto;aspect-ratio:var(--tile);object-fit:cover}

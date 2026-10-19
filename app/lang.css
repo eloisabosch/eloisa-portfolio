@@ -1,0 +1,4 @@
+/* Selector de idioma ES / EN en el header */
+body .lang{margin-left:6px;font-size:.85em;white-space:nowrap}
+body .lang button{background:none;border:0;font:inherit;color:var(--mute);cursor:pointer;padding:0 1px;transition:color .25s}
+body .lang button.on,body .lang button:hover{color:var(--ink)}

@@ -1,0 +1,19 @@
+/* Carrusel de proyectos (/projects). Se carga después de globals.css. */
+body .proj{display:flex;flex-direction:column;min-height:calc(100vh - 64px);padding-bottom:20px}
+.proj-intro{font-size:clamp(15px,1.55vw,22px);line-height:1.3;max-width:min(560px,80vw)}
+.proj-bottom{margin-top:auto;padding-top:60px}
+.proj-label{font-size:13px;margin-bottom:12px}
+.rail{overflow:hidden;margin:0 calc(var(--pad) * -1)}
+.track{display:flex;width:max-content;animation:rail var(--dur,50s) linear infinite}
+.rail:hover .track,.rail:active .track{animation-play-state:paused}
+@keyframes rail{to{transform:translateX(-50%)}}
+.card{flex:0 0 auto;display:block;width:clamp(210px,21vw,330px);margin-right:16px}
+.thumb{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#ece8de}
+.thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .5s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.thumb .b{opacity:0}
+.thumb .ph{position:absolute;inset:0;aspect-ratio:auto}
+.card:hover .b{opacity:1}
+.card:hover .thumb img{transform:scale(1.05)}
+.cap{display:block;margin-top:10px;font-size:14px;color:var(--mute);transition:color .3s}
+.card:hover .cap,.card:focus-visible .cap{color:var(--ink)}
+@media(prefers-reduced-motion:reduce){.track{animation:none}.rail{overflow-x:auto}}

@@ -1,0 +1,33 @@
+/* Estilos del mapa. Se carga después de globals.css y lo pisa. */
+body .header { font-size: 18px; font-weight: 400; }
+body .blurb { font-size: 16px; line-height: 1.4; max-width: 350px; z-index: 25; }
+body .world path{stroke-linecap:round;transition:stroke-opacity .3s,stroke-width .3s}
+body .node{background:var(--bg)}
+body .node img{width:100%;height:auto;transition:opacity .3s}
+body .node:hover img,body .node:hover .ph{opacity:1!important}
+/* bordes difusos arriba y a los costados */
+.edge{position:fixed;z-index:15;pointer-events:none;backdrop-filter:blur(7px);-webkit-backdrop-filter:blur(7px)}
+.edge-t{top:0;left:0;right:0;height:120px;-webkit-mask-image:linear-gradient(#000,transparent);mask-image:linear-gradient(#000,transparent);background:linear-gradient(color-mix(in srgb,var(--bg) 75%,transparent),transparent)}
+.edge-l,.edge-r{top:0;bottom:0;width:50px}
+.edge-l{left:0;-webkit-mask-image:linear-gradient(to right,#000,transparent);mask-image:linear-gradient(to right,#000,transparent)}
+.edge-r{right:0;-webkit-mask-image:linear-gradient(to left,#000,transparent);mask-image:linear-gradient(to left,#000,transparent)}
+/* zoom en cajitas redondeadas */
+body .zoom{gap:8px}
+.zbox{width:46px;border:1px solid var(--line);border-radius:12px;background:var(--bg);display:flex;flex-direction:column;align-items:center}
+body .zbox button{width:46px;height:44px;font-size:10px}
+.zticks{padding:10px 0}.zbox .tick{margin:6px 0}
+/* Ocultar completamente las líneas de conexión del fondo */
+body .world path {
+  display: none !important;
+}
+/* Estilo de los nodos para aplicar opacidad dinámica */
+body .node {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Al pasar el mouse por encima, aumenta la escala y se vuelve 100% visible */
+body .node:hover {
+  transform: translate(-50%, -50%) scale(1.08) !important;
+  opacity: 1 !important;
+  z-index: 50 !important;
+}
