@@ -1,0 +1,14 @@
+/* Home en grilla. Deja libre la columna izquierda para el texto fijo de abajo. */
+body .home{padding:96px calc(var(--pad) + 62px) 80px var(--pad)}
+@media(min-width:900px){body .home{padding-left:calc(var(--pad) + clamp(390px,32vw,520px))}}
+.hgrid{display:grid;grid-template-columns:repeat(var(--cols,4),minmax(0,1fr));gap:34px 22px}
+.tile{display:block}
+.sq{position:relative;aspect-ratio:1;overflow:hidden;background:#ece8de}
+.sq img{object-fit:cover;transition:opacity .5s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.sq .b{opacity:0}
+.sq .ph{position:absolute;inset:0;aspect-ratio:auto}
+.tile:hover .b{opacity:1}
+.tile:hover .sq img{transform:scale(1.04)}
+.nm{display:block;margin-top:8px;font-size:14px;line-height:1.25;transition:color .3s}
+.tile:hover .nm{color:var(--mute)}
+@media(max-width:899px){body .blurb.home-blurb{position:static;max-width:none;margin:0 0 36px;pointer-events:auto}}
