@@ -1,0 +1,2 @@
+/* Home = proyectos: párrafo de presentación un poco más grande, como en la referencia */
+body .proj-intro{font-size:clamp(15px,1.35vw,20px);line-height:1.3;max-width:min(640px,85vw)}

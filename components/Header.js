@@ -5,7 +5,7 @@ import { useContent, useLang } from "./Lang";
 export default function Header({ path }) {
   const { person, ui } = useContent();
   const { lang, setLang } = useLang();
-  const nav = [[ui.about, "/about"], [ui.projects, "/projects"], [ui.contact, "/contact"]];
+  const nav = [[ui.about, "/about"], [ui.projects, "/"], [ui.contact, "/contact"]];
   return (
     <header className="header">
       <CurtainLink href="/">{person.name}</CurtainLink>
