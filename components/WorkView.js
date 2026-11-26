@@ -61,7 +61,7 @@ export default function WorkView({ slug }) {
         {p.longDescription && (
           <section className="case-about">
             <h2>{ui.aboutProject}</h2>
-            <p>{p.longDescription}</p>
+            <div>{p.longDescription.split("\n\n").map((t, n) => <p key={n}>{t}</p>)}</div>
           </section>
         )}
 
