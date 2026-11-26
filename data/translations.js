@@ -75,11 +75,11 @@ export const esProjects = {
     longDescription: "Las bebidas listas para tomar suelen apoyarse en gráficas ruidosas e impersonales. Sobremesa va por el camino contrario: toma la sobremesa española, ese rato sin apuro en la mesa después de comer, y convierte cada botella de 250 ml en una pieza de arte.\n\nLas etiquetas son pinturas digitales con pinceladas expresivas, cercanas al óleo, y una tipografía orgánica. Cada una funciona sola y como parte de una serie para coleccionar. Un proyecto independiente de autoexploración en el que desarrollé el concepto, las pinturas, la marca y el packaging.",
   },
   pasito: {
-    category: "Packaging · Diseño de app",
+    category: "Packaging",
     context: "Producto real · producido en China",
-    role: "Packaging (comunicación, materiales y diseño) y diseño de la app",
-    description: "Packaging y app para Pasito Health Band, una pulsera de actividad. La caja se produjo en China en noviembre de 2026.",
-    longDescription: "Pasito necesitaba una caja amigable y clara, incluso antes de tener el producto en la mano. Definí qué tenía que transmitir el packaging, elegí sus materiales y lo diseñé como un cajón deslizable: una funda verde profundo, una bandeja de cartón que sostiene la pulsera, el módulo y el cable, y una cinta amarilla para abrirla.\n\nEl frente muestra el dibujo de línea de la pulsera; el dorso resume sus funciones con íconos simples y un QR para descargar la app. La frase “Cada pasito cuenta.” une todo. También diseñé la app de Pasito.",
+    role: "Packaging: comunicación, materiales y diseño",
+    description: "Packaging para Pasito Health Band, una pulsera de actividad. La caja se produjo en China en noviembre de 2026.",
+    longDescription: "Pasito necesitaba una caja amigable y clara, incluso antes de tener el producto en la mano. Definí qué tenía que transmitir el packaging, elegí sus materiales y lo diseñé como un cajón deslizable: una funda verde profundo, una bandeja de cartón que sostiene la pulsera, el módulo y el cable, y una cinta amarilla para abrirla.\n\nEl frente muestra el dibujo de línea de la pulsera; el dorso resume sus funciones con íconos simples y un QR para descargar la app. La frase “Cada pasito cuenta.” une todo.",
   },
   "espacio-hila": {
     category: "Redes · Afiches · Sistema de plantillas",

@@ -77,10 +77,10 @@ export const projects = [
     mainImage: I("Sobremesa10"),
     galleryImages: ["Sobremesa1-jpeg", "Sobremesa6-jpeg", "Sobremesa7", "Sobremesa9", "Sobremesa4"].map(I) },
 
-  { slug: "pasito", title: "Pasito", category: "Packaging · App design", year: "2026",
-    context: "Real product · produced in China", role: "Packaging (communication, materials and design) and app design",
-    description: "Packaging and app for Pasito Health Band, an activity tracker. The box was produced in China in November 2026.",
-    longDescription: "Pasito needed a box that felt friendly and clear before the product was even in your hand. I defined what the packaging had to communicate, chose its materials and designed it as a sliding drawer: a deep green sleeve, a cardboard tray that holds the band, the module and the cable, and a yellow pull tab.\n\nThe front shows a line drawing of the band; the back sums up its features with simple icons and a QR code to download the app. The line “Cada pasito cuenta.” (every little step counts) ties it all together. I also designed the Pasito app.",
+  { slug: "pasito", title: "Pasito", category: "Packaging", year: "2026",
+    context: "Real product · produced in China", role: "Packaging: communication, materials and design",
+    description: "Packaging for Pasito Health Band, an activity tracker. The box was produced in China in November 2026.",
+    longDescription: "Pasito needed a box that felt friendly and clear before the product was even in your hand. I defined what the packaging had to communicate, chose its materials and designed it as a sliding drawer: a deep green sleeve, a cardboard tray that holds the band, the module and the cable, and a yellow pull tab.\n\nThe front shows a line drawing of the band; the back sums up its features with simple icons and a QR code to download the app. The line “Cada pasito cuenta.” (every little step counts) ties it all together.",
     mainImage: I("pasito-render-1"),
     galleryImages: ["pasito-render-2", "pasito-render-3"].map(I) },
 
