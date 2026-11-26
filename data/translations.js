@@ -7,28 +7,30 @@
 export const ui = {
   en: {
     about: "About Me", projects: "Projects", contact: "Contact", selectedWork: "Selected Work", view: "View project →",
-    aboutProject: "About the project", year: "Year", collaborators: "Collaborators", context: "Context", guidance: "Guidance",
-    category: "Category", close: "Close [ × ]", continue: "Continue", back: "Back", send: "Send",
+    aboutProject: "About the project", year: "Year", team: "Team", context: "Context", role: "My role",
+    category: "Disciplines", close: "Close", continue: "Continue", back: "Back", send: "Send",
+    next: "Next project", index: "All projects", prev: "Previous image", nextImg: "Next image",
     thanks: "Thank you — I'll answer you soon.", invalidEmail: "Please enter a valid email.",
-    copyright: "Copyright", websiteBy: "Website by", resume: "Resume",
+    copyright: "Copyright", websiteBy: "Website by", resume: "Resume", dragHint: "Drag or scroll",
   },
   es: {
     about: "Sobre mí", projects: "Proyectos", contact: "Contacto", selectedWork: "Trabajos seleccionados", view: "Ver proyecto →",
-    aboutProject: "Sobre el proyecto", year: "Año", collaborators: "Colaboradores", context: "Contexto", guidance: "Guía",
-    category: "Categoría", close: "Cerrar [ × ]", continue: "Continuar", back: "Atrás", send: "Enviar",
+    aboutProject: "Sobre el proyecto", year: "Año", team: "Equipo", context: "Contexto", role: "Mi rol",
+    category: "Disciplinas", close: "Cerrar", continue: "Continuar", back: "Atrás", send: "Enviar",
+    next: "Siguiente proyecto", index: "Todos los proyectos", prev: "Imagen anterior", nextImg: "Imagen siguiente",
     thanks: "Gracias — te respondo pronto.", invalidEmail: "Ingresá un email válido.",
-    copyright: "Copyright", websiteBy: "Sitio por", resume: "CV",
+    copyright: "Copyright", websiteBy: "Sitio por", resume: "CV", dragHint: "Arrastrá o hacé scroll",
   },
 };
 
 export const esPerson = {
-  role: "Diseñadora multidisciplinar",
+  role: "Diseñadora integral",
   availability: "Disponible para posiciones full-time y proyectos freelance.",
-  mapIntro:
-    "Soy diseñadora integral en formación en la Universidad Torcuato Di Tella, con experiencia de intercambio en la Universidad Carlos III. Uno el diseño gráfico, UX/UI e industrial para construir narrativas coherentes y con propósito. Me especializo en convertir investigaciones complejas en sistemas estratégicos, y quiero aportar pensamiento crítico y profundidad técnica a un equipo de impacto y con visión de futuro.",
+  projectsIntro:
+    "Soy diseñadora integral. Hago branding, construyo *narrativas* y diseño desde la idea hasta el objeto. Quiero seguir creciendo con nuevos equipos.",
   aboutLong: [
     "Entiendo el diseño como una herramienta estratégica y cultural para investigar, cuestionar y detectar tensiones, transformándolas en sistemas coherentes con fundamento conceptual.",
-    "Trabajo desde el diseño gráfico, UX/UI e industrial para construir identidades, marcas y experiencias con profundidad. Estudio Diseño en la Universidad Torcuato Di Tella en Buenos Aires, e hice un intercambio Erasmus en Cine, Televisión y Estudios de Medios en la Universidad Carlos III de Madrid.",
+    "Trabajo desde el diseño gráfico, UX/UI e industrial para construir identidades, marcas y experiencias con profundidad. Estoy terminando la Licenciatura en Diseño en la Universidad Torcuato Di Tella, en Buenos Aires, e hice un intercambio Erasmus en Cine, Televisión y Estudios de Medios en la Universidad Carlos III de Madrid.",
   ],
   education: [
     "Universidad Torcuato Di Tella — Licenciatura en Diseño (2023–2026)",
@@ -39,7 +41,7 @@ export const esPerson = {
 
 export const esContact = {
   title: "Si te gusta mi manera de pensar",
-  intro: "Soy diseñadora freelance y estudiante, y busco proyectos, colaboraciones o posiciones interesantes. Escribime abajo o mandame un mail a ",
+  intro: "Soy diseñadora y busco proyectos, colaboraciones y posiciones. Escribime abajo o mandame un mail a ",
   steps: [
     { title: "Tus datos", fields: [
       { name: "name", label: "¿Cómo te llamás?", required: true, error: "Contame tu nombre." },
@@ -59,48 +61,79 @@ export const esContact = {
 
 export const esProjects = {
   "a-donde-voy-llevo-mi-bandera": {
-    category: "UX/UI y Diseño de Producto", context: "Universidad · MUNTREF",
-    description: "Reimaginando la diáspora argentina a través de la “argentinidad exacerbada”. Un sistema phygital en un museo que representa las tensiones de la migración contemporánea sin clichés: juego “Track & Collect” por QR, estaciones táctiles, visores con sensores PIR, mapa interactivo y estación de impresión de stickers.",
-    longDescription: "A dónde voy llevo mi bandera es una exposición museográfica phygital e inmersiva que explora la diáspora argentina contemporánea. Al unir objetos físicos con interactividad digital, el proyecto investiga cómo se reconstruye, se performa y se preserva la identidad nacional lejos de casa. Como proyecto de UX/UI y diseño de producto, combina historia y tecnología para convertir la visita al museo en un juego narrativo, e invita a descubrir las historias, objetos y tensiones culturales que definen qué significa ser argentino en un mundo globalizado.",
-  },
-  financity: {
-    category: "Diseño UX/UI", context: "Universidad",
-    description: "Aprender haciendo, no explicando. Una app de simulación financiera gamificada para jóvenes de 16 a 23 años, con un avatar que refleja cada decisión a través de The Arcade (minijuegos), The Bank (inversión sin riesgo) y The Shop (consumo consciente).",
-    longDescription: "Financity es una aplicación móvil interactiva que transforma la educación financiera en un juego de simulación inmersivo. Al acercar a los jóvenes a las finanzas personales, el proyecto reemplaza la jerga compleja por un ecosistema visual y gamificado donde se administra dinero, se invierte y se ahorra a través de un avatar interactivo. Es una herramienta de aprendizaje haciendo, pensada para construir hábitos financieros saludables en un entorno seguro y sin riesgo.",
-  },
-  pulse: {
-    category: "Branding, UX/UI de App y Comunicación", context: "Cliente · Pulse",
-    description: "Una plataforma que conecta usuarios, organizadores y embajadores con deportes de aventura al aire libre. Marca gráfica completa, logotipo, UX/UI de la app y estrategia de comunicación.",
-    longDescription: "Desarrollé la identidad de marca completa de la empresa: nombre, logo, sistema visual y diseño de la app, además de todos los elementos necesarios para el lanzamiento de la plataforma que te conecta con las mayores aventuras de la vida. Una app pensada para que vivir la aventura sea tan fácil como un clic.",
+    category: "Diseño de exposición y experiencia · Ilustración",
+    context: "Universidad · Universidad Torcuato Di Tella, para el MUNTREF",
+    role: "Ilustración (todas las ilustraciones son mías), narrativa, ideas y modelado 3D",
+    description: "Reimaginar la diáspora argentina a través de la “argentinidad exacerbada”. Un sistema museográfico phygital que representa las tensiones de la migración contemporánea sin clichés: juego “Track & Collect” por QR, estaciones táctiles, visores con sensores, mapa interactivo y estación de impresión de stickers.",
+    longDescription: "Una exposición inmersiva y phygital sobre la diáspora argentina contemporánea. Al unir objetos físicos con interacción digital, el proyecto mira cómo se reconstruye, se actúa y se sostiene la identidad nacional lejos de casa. La visita al museo se vuelve un juego narrativo que invita a descubrir las historias, los objetos y las tensiones culturales detrás de lo que significa ser argentino en un mundo globalizado.",
   },
   sobremesa: {
-    category: "Branding y Packaging", context: "Proyecto personal",
-    description: "Reinterpretar la sobremesa española a través del arte coleccionable en botellas de vidrio de 250 ml. Las bebidas ready-to-drink están dominadas por gráficas masivas e impersonales; estas botellas se conciben como obras al óleo, con trazos artesanales y tipografía orgánica.",
-    longDescription: "Identidad de marca y packaging para un Tinto de Verano embotellado, que celebra los momentos compartidos, los encuentros casuales y la estética artística contemporánea. La convicción de que la belleza debe habitar los rituales cotidianos. Reinterpreta la relajada sobremesa española desde el arte coleccionable, llevando una intimidad táctil al consumo casual durante el día. Una serie de vinos embotellados concebidos como objetos de arte tangibles, del tamaño de un bolsillo. Con expresivas pinceladas al óleo y calidez pictórica, cada botella invita a la contemplación y celebra el arte como una parte natural y accesible de la vida diaria.",
+    category: "Branding · Packaging · Ilustración digital",
+    context: "Proyecto propio · autoexploración independiente",
+    role: "Concepto, pinturas digitales, branding y packaging",
+    description: "Reinterpretar la sobremesa española a través del arte coleccionable en botellas de vidrio de 250 ml. Las bebidas listas para tomar están dominadas por gráficas ruidosas e impersonales; estas etiquetas son pinturas digitales con pinceladas expresivas y tipografía orgánica.",
+    longDescription: "Identidad de marca y packaging para un Tinto de Verano embotellado que celebra los momentos compartidos y los encuentros tranquilos de día. Cada botella se piensa como un pequeño objeto de arte coleccionable: las etiquetas son pinturas digitales con un trazo pictórico, cercano al óleo, para que el arte forme parte natural de un ritual cotidiano.",
+  },
+  pasito: {
+    category: "Packaging · Diseño de app",
+    context: "Proyecto real · producido en China",
+    role: "Packaging (comunicación, materiales y diseño) y diseño de la app",
+    description: "Packaging para Pasito Health Band, una pulsera de actividad. La caja se mandó a producir a China.",
+    longDescription: "Diseñé el packaging de Pasito Health Band y trabajé en la app de Pasito. Para la caja definí qué tenía que transmitir el packaging, sus materiales y su diseño: un cajón deslizable con una bandeja de cartón para la pulsera, el módulo y el cable; un frente con el dibujo de línea del producto; un dorso que resume las funciones y lleva a la app, y la frase “Cada pasito cuenta.”",
+  },
+  "espacio-hila": {
+    category: "Redes · Afiches · Sistema de plantillas",
+    context: "Freelance · Espacio Hila, Madrid",
+    role: "Sistema de plantillas editables en Canva, piezas para redes y afiches",
+    description: "Un espacio de salud mental creado por dos psicólogas argentinas en Madrid, que ofrece terapia y acompañamiento para terapeutas.",
+    longDescription: "Diseñé un sistema de plantillas editables en Canva para que el equipo comunique sus actividades con una identidad coherente, cercana y profesional. Fotografía de archivo, collage y preguntas abiertas transmiten su mirada sobre los vínculos, el cuidado y la comunidad en stories, posts y afiches.",
+  },
+  pulse: {
+    category: "Branding · UX/UI de app · Comunicación",
+    context: "Cliente · Pulse",
+    role: "Identidad de marca, UX/UI de la app y comunicación de lanzamiento",
+    description: "Una plataforma que conecta usuarios, organizadores y embajadores con deportes de aventura al aire libre. Marca, logotipo, UX/UI de la app y comunicación. La app está publicada en la App Store.",
+    longDescription: "Desarrollé la identidad de marca completa de Pulse —nombre, logo y sistema visual— y diseñé la app, junto con las piezas necesarias para su lanzamiento. El objetivo: que sumarse a una aventura al aire libre sea tan fácil como tocar un botón. La app se desarrolló y se lanzó en la App Store.",
   },
   arke: {
-    category: "Diseño de Producto y Redes Sociales", context: "Cliente · Arké, Barcelona",
-    description: "Calzado barefoot y ergonómico de diseño minimalista. Identidad visual, cajas y packaging de zapatillas, paleta de colores, campaña de Kickstarter (julio 2025) y gestión de redes sociales.",
-    longDescription: "Arké diseña zapatillas barefoot para el día a día, combinando biomecánica ergonómica con un diseño minimalista y cuidado. Con base en Barcelona, su propuesta busca calzado que permita moverse de forma natural sin resignar estilo ni comodidad. Contribuí a la marca desarrollando la identidad visual, diseñando las cajas de las zapatillas, definiendo la paleta de colores y encargándome del diseño y la estrategia de redes sociales.",
-  },
-  "condor-ai": {
-    category: "Branding y Diseño Visual", context: "Cliente · Condor.ai",
-    description: "Un sistema visual e identidad de marca para una plataforma con IA.",
-    longDescription: "Desarrollé el sistema de identidad de marca integral de Condor.ai para construir una presencia visual institucional y de autoridad, orientada a ampliar su cartera de clientes. El proyecto incluyó la creación de un logotipo original, una paleta de colores refinada y guías visuales claras, pensadas para dar consistencia y confianza en todos los puntos de contacto estratégicos.",
-  },
-  "gentle-encounters": {
-    category: "Impresión e Ilustración", context: "Encargo privado",
-    description: "Una serie limitada de postales en tinta sobre papel de textura artesanal, para explorar recuerdos de la infancia y la ternura cotidiana.",
-    longDescription: "Una serie personalizada de postales ilustradas que explora los recuerdos de infancia, la calidez y la compañía a través de dibujos expresivos al estilo tinta. Traduce momentos tiernos de lo cotidiano en piezas de papelería atemporales, con foco en las texturas táctiles del papel y en un trazo crudo y artesanal. Un set limitado y personalizado que combina una estética tradicional expresiva con un packaging editorial cuidado y limpio, listo para enviar o coleccionar.",
-  },
-  "gahan-pettit": {
-    category: "Diseño Textil y Gráfico", context: "Cliente · @gahanpettit",
-    description: "Una serie de estampas e ilustraciones lúdicas para indumentaria infantil.",
-    longDescription: "El proyecto se centra en crear estampas únicas para la ropa infantil de la marca Gahan Pettit, con una impronta lúdica y artística. Desarrollé una serie de diseños y estampas para indumentaria infantil, inspirados en temas vibrantes e imaginativos que conectan tanto con los chicos como con sus padres. Usando Adobe Illustrator y Photoshop, creé múltiples diseños divertidos pero elegantes, alineados con la identidad de la marca y atractivos para los niños.",
+    category: "Packaging · Redes · Campaña",
+    context: "Cliente · Arké, Barcelona",
+    role: "Packaging, paleta de color, campaña de Kickstarter y redes (el nombre y el logo los definió la marca)",
+    description: "Calzado barefoot y ergonómico de diseño minimalista, de Barcelona. Cajas y packaging, paleta de color, campaña de Kickstarter (julio 2025) y redes sociales.",
+    longDescription: "Arké diseña zapatillas barefoot para el día a día, combinando biomecánica ergonómica con un diseño minimalista. Trabajé en las cajas y el packaging de las zapatillas, definí la paleta de color y me encargué del diseño y la estrategia de la campaña de Kickstarter y de las redes. La campaña salió en julio de 2025 y le fue bien.",
   },
   catalizadores: {
-    category: "Moda Experimental, Morfología 3D y Campañas Generativas por IA", context: "Universidad · VirtualLab, E_02",
-    description: "Una colección experimental y una corta campaña de alta costura: prendas escultóricas inspiradas en la fluidez del agua, llevadas de la nada a todo, de lo irreal a lo concreto, con modelado 3D e inteligencia artificial generativa.",
-    longDescription: "Sintonía Biomórfica es una colección y corta campaña de alta costura desarrollada desde cero a partir del cruce entre la moda experimental (Schiaparelli, Loewe), la rigurosidad del diseño de producto y las tecnologías de fabricación contemporáneas. Ideé y diseñé piezas de indumentaria escultórica inspiradas en la fluidez y el movimiento del agua, materializadas mediante modelado 3D y generación con inteligencia artificial. El flujo integra la creación de las prendas, su resolución como productos tridimensionales viables y la dirección creativa de una campaña editorial hiperrealista, construida con un flujo iterativo en herramientas generativas como Google Flow, que sitúa las piezas fuera del estudio, en un entorno natural. El proyecto demuestra que la IA no se agota en imágenes efímeras: los volúmenes, pliegues radiales y estructuras orgánicas concebidos digitalmente se traducen en mallas tridimensionales, geometrías vectoriales y modelos listos para fabricar, mediante manufactura aditiva y patronaje técnico. La IA actúa como un catalizador que acelera la exploración morfológica y vuelve al diseñador un curador de sistemas de reglas formales, en un territorio donde lo digital y lo táctil dejan de competir para fundirse en un nuevo lenguaje de lujo contemporáneo.",
+    category: "Moda experimental · Campaña con IA",
+    context: "Universidad · VirtualLab, E_02",
+    role: "Concepto, dirección de arte, generación de imágenes con IA y modelado 3D",
+    description: "Una campaña de moda generada con IA: prendas escultóricas inspiradas en la fluidez del agua, en paisajes naturales.",
+    longDescription: "Una campaña corta de prendas escultóricas inspiradas en el agua, generada con herramientas de IA como Google Flow. Después modelé las piezas en 3D para estudiar sus curvas y pliegues.",
+  },
+  "gahan-pettit": {
+    category: "Estampas textiles · Diseño gráfico",
+    context: "Freelance · @gahanpettit",
+    role: "Estampas textiles y piezas gráficas",
+    description: "Estampas e ilustraciones para una marca de ropa infantil.",
+    longDescription: "Una colaboración freelance de ida y vuelta con la marca de ropa infantil Gahan Pettit, diseñando estampas textiles y piezas gráficas. Motivos dibujados, lúdicos, que funcionan para chicos y grandes y respetan la identidad de la marca.",
+  },
+  "gentle-encounters": {
+    category: "Impresión · Ilustración",
+    context: "Encargo privado",
+    role: "Ilustración y packaging editorial",
+    description: "Una serie limitada de postales en tinta sobre papel de textura artesanal, sobre recuerdos de la infancia y la ternura cotidiana.",
+    longDescription: "Una serie de postales ilustradas sobre los recuerdos de infancia, la calidez y la compañía, dibujadas con una línea de tinta expresiva. Momentos tiernos de todos los días convertidos en papelería, con foco en la textura del papel y un packaging editorial limpio, listo para enviar o coleccionar.",
+  },
+  financity: {
+    category: "UX/UI",
+    context: "Universidad",
+    description: "Aprender haciendo, no explicando. Una app de simulación financiera gamificada para jóvenes de 16 a 23 años, con un avatar que refleja cada decisión a través de The Arcade (minijuegos), The Bank (inversión sin riesgo) y The Shop (consumo consciente).",
+    longDescription: "Financity convierte la educación financiera en un juego de simulación. En lugar de jerga, los jóvenes administran dinero, invierten y ahorran a través de un avatar en un mundo visual y gamificado: una herramienta para aprender haciendo y construir hábitos sanos sin riesgo.",
+  },
+  "condor-ai": {
+    category: "Branding · Plantillas",
+    context: "Cliente · Condor.ai",
+    role: "Identidad de marca y sistema de plantillas",
+    description: "Identidad de marca y un set de plantillas para una plataforma de IA.",
+    longDescription: "Una identidad visual para Condor.ai —logotipo, paleta de color y guías visuales— y un set de plantillas que el equipo completa con su propio contenido (por eso algunas todavía muestran texto de relleno).",
   },
 };

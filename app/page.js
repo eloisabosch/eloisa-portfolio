@@ -1,25 +1,35 @@
 "use client";
+import { useEffect } from "react";
 import ProjectCarousel from "../components/ProjectCarousel";
 import Footer from "../components/Footer";
+import Rich from "../components/Rich";
 import { useContent } from "../components/Lang";
 import "./home.css";
 
-// HOME = proyectos. Texto de presentación arriba + carrusel de proyectos abajo.
-// El párrafo es person.mapIntro (portfolioData.js / translations.js).
-// Si querés otro texto solo para acá, agregá person.projectsIntro en portfolioData.js.
+// HOME = una sola pantalla fija: frase arriba, carrusel de proyectos abajo y pie.
+// La página no scrollea: la rueda del mouse mueve el carrusel.
+// El texto es person.projectsIntro (portfolioData.js / translations.js).
 export default function Home() {
   const { projects, person, ui } = useContent();
-  const intro = person.projectsIntro ?? person.mapIntro;
+
+  useEffect(() => {
+    document.documentElement.classList.add("lock");
+    return () => document.documentElement.classList.remove("lock");
+  }, []);
+
   return (
-    <>
+    <div className="home">
       <main className="page proj">
-        <p className="proj-intro">{intro}</p>
+        <h1 className="proj-intro"><Rich text={person.projectsIntro} /></h1>
         <div className="proj-bottom">
-          <p className="proj-label">{ui.selectedWork}</p>
+          <div className="proj-label">
+            <p>{ui.selectedWork}</p>
+            <p className="hint">{ui.dragHint}</p>
+          </div>
           <ProjectCarousel projects={projects} />
         </div>
       </main>
       <Footer />
-    </>
+    </div>
   );
 }

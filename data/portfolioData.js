@@ -1,26 +1,28 @@
 // ============================================================
-//  TODO EL CONTENIDO DEL SITIO VIVE ACÁ. Editá textos, links y proyectos.
-//  Imágenes: ponelas en /public/images y referenciálas como "/images/archivo.jpg".
-//  Si una imagen es null se muestra un recuadro gris con el título.
+//  TODO EL CONTENIDO DEL SITIO VIVE ACÁ (inglés). El español está en translations.js.
+//  Imágenes: los originales quedan en /public/images. El sitio usa las versiones
+//  livianas de /public/img (webp). Para regenerarlas: node scripts/optimize-images.mjs
+//  En los textos, *palabra* se muestra en itálica serif.
+//  Un campo vacío ("" o sin poner) no se muestra en la ficha del proyecto.
 // ============================================================
+
+const I = (name) => `/img/${name}.webp`;
 
 export const person = {
   name: "Eloísa Bosch",
   role: "Multidisciplinary Designer",
   location: "Buenos Aires, Argentina",
-availability: "Available for full-time positions and freelance projects.",
-  mapIntro:
-    "I am an integrated design student from Universidad Torcuato Di Tella with exchange program experience at Universidad Carlos III. I bridge graphic, UX/UI, and industrial design to build coherent, purposeful narratives. I specialize in turning complex research into strategic systems, and I am eager to contribute critical thinking and technical depth to impactful, forward-thinking team.",
+  availability: "Available for full-time positions and freelance projects.",
+  projectsIntro:
+    "I’m a multidisciplinary designer. I work in branding, build *narratives* and design from the first idea to the final object. I want to keep growing alongside new teams.",
   aboutLong: [
     "I understand design as a strategic and cultural tool to investigate, question and detect tensions, and to turn them into coherent systems with a conceptual foundation.",
-    "I work across graphic, UX/UI and industrial design to build identities, brands and experiences with depth. I study Design at Universidad Torcuato Di Tella in Buenos Aires, and spent an Erasmus exchange in Film, Television and Media Studies at Universidad Carlos III de Madrid.",
-  
+    "I work across graphic, UX/UI and industrial design to build identities, brands and experiences with depth. I’m finishing my degree in Design at Universidad Torcuato Di Tella in Buenos Aires, and spent an Erasmus exchange in Film, Television and Media Studies at Universidad Carlos III de Madrid.",
   ],
-  portrait: "/images/polaroid.jpg", // "/images/eloisa.jpg"
+  portrait: "/images/polaroid.jpg",
   education: [
     "Universidad Torcuato Di Tella — Bachelor in Design (2023–2026)",
     "Universidad Carlos III de Madrid — Erasmus, Film, Television and Media Studies (2025–2026)",
-  
   ],
   skills: ["Adobe Photoshop", "Adobe Illustrator", "Rhino 7", "Adobe After Effects", "Keyshot", "Figma", "Framer", "Visual Code"],
   languages: ["Spanish (Native)", "English (Advanced)"],
@@ -33,13 +35,13 @@ availability: "Available for full-time positions and freelance projects.",
   resume: { label: "Resume", href: "/images/CV-Eloisa-Bosch.pdf" },
   email: "eloisabosch5@gmail.com",
   phone: "+54 9 11 35005389",
-  siteCredit: { label: "Eloísa Bosch", href: "#" },
+  siteCredit: { label: "Eloísa Bosch", href: "/" },
 };
 
 export const contact = {
   title: "If my work speaks to yours",
   intro:
-    "I’m a freelance designer and student looking for cool projects, collaborations, or positions. Drop a line below or send an email to ",
+    "I’m a designer looking for projects, collaborations and positions. Drop a line below or send an email to ",
   steps: [
     { title: "Your Information", fields: [
       { name: "name", label: "What is your name?", required: true, error: "Please share your name." },
@@ -47,7 +49,7 @@ export const contact = {
       { name: "link", label: "Portfolio or Instagram (optional)" },
       { name: "org", label: "Company or Studio (optional)" } ] },
     { title: "What are you looking for?", fields: [
-      { name: "type", label: "Freelance project, part-time role, collaboration…", required: true, error: "Please tell me what you have in mind." },
+      { name: "type", label: "Freelance project, full-time role, collaboration…", required: true, error: "Please tell me what you have in mind." },
       { name: "timing", label: "Timeline (optional)" } ] },
     { title: "About the project", fields: [
       { name: "about", label: "Tell me a bit about it", required: true, error: "Please add a few words." },
@@ -57,54 +59,86 @@ export const contact = {
   ],
 };
 
-// x,y: posición en un mundo de 1600 x 1100. w: ancho del nodo. links: slugs conectados con una línea.
-// Para agregar un proyecto: copiá un objeto, cambiá slug/coords y listo.
+// Orden = orden en el carrusel de la home.
+// Campos de la ficha: year, context, category (disciplinas), role, team.
 export const projects = [
-  { id: 1, slug: "a-donde-voy-llevo-mi-bandera", title: "A dónde voy llevo mi bandera", category: "UX/UI & Product Design", year: "2025",
-    context: "University · MUNTREF", collaborators: "n/a", guidance: "n/a", accent: "#e0a526",
-    description: "Reimagining the Argentine diaspora through “exacerbated argentinidad”. A phygital museum system that represents the tensions of contemporary migration without clichés: a QR “Track & Collect” game, tactile stations, PIR-sensor viewers, an interactive map and a sticker printing station.",
-    longDescription: "A donde voy llevo mi bandera is an immersive, phygital museum exhibition that explores the contemporary Argentine diaspora. By bridging physical artifacts with digital interactivity, the project investigates how national identity is reconstructed, performed, and preserved far from home, As a UX UI and product design project, it blends history with technology to turn the traditional museum-going experience into a narrative game, inviting visitors to uncover the stories, objects, and cultural tensions that define what it means to be Argentine in a globalized world.",
-    mainImage: "/images/ADVYMB9.png", galleryImages: ["/images/ADVYMB10.png", "/images/ADVYMB11.png", "/images/ADVYMB12.png", "/images/ADVYMB13.png", "/images/ADVYMB14.png", "/images/ADVYMB15.png", "/images/ADVYMB16.png", "/images/ADVYMB17.png", "/images/ADVYMB18.png", "/images/ADVYMB1.png", "/images/ADVYMB2.jpg",  "/images/ADVYMB4.jpg", "/images/ADVYMB7.png"],  x: 420, y: 300, w: 120, links: ["financity", "pulse"] },
-  { id: 2, slug: "financity", title: "Financity", category: "UX/UI Design", year: "2025",
-    context: "University", collaborators: "n/a", guidance: "n/a", accent: "#4caf6e",
-    longDescription: "Financity is an interactive mobile application that transforms financial education into an immersive simulation game. By bridging the gap between young adults and personal finance, the project replaces complex jargon with a visual, gamified ecosystem where users manage money, invest, and save through an interactive avatar experience. It is a learning-by-doing tool designed to build healthy financial habits in a safe, risk-free environment.",
-    description: "Learn by doing, not explaining. A gamified financial simulation app for 16–23 year-olds, with an avatar that reflects each decision through The Arcade (mini-games), The Bank (risk-free investing) and The Shop (conscious spending).",
-    mainImage: "/images/financity1.avif", galleryImages: [ "/images/financity2.avif", "/images/financity3.avif", "/images/financity4.avif"], x: 760, y: 220, w: 110, links: ["pulse", "sobremesa"] },
-  { id: 3, slug: "pulse", title: "Pulse", category: "Branding, App UX/UI & Communication", year: "2025",
-    context: "Client · Pulse", collaborators: "Eloísa Bosch", guidance: "n/a", accent: "#3a8fd9",
-    description: "A platform that connects users, organizers and ambassadors with outdoor adventure sports. Complete visual brand, logotype, app UX/UI and communication strategy.",
-    longDescription: "Developed the full brand identity for the company, including the name, logo, visual system, and app design, as well as all the elements required to launch, the platform that connects you with life’s greatest adventures. an app designed to make experiencing adventure as easy as a click",
-    mainImage: "/images/pulse1.jpg", galleryImages: [ "/images/pulse3.jpg", "/images/pulse4.jpg", "/images/pulse5.jpg"], x: 640, y: 520, w: 130, links: ["arke", "condor-ai"] },
-  { id: 4, slug: "sobremesa", title: "Sobremesa", category: "Branding & Packaging", year: "2026",
-    context: "Self-initiated", collaborators: "Eloísa Bosch", guidance: "n/a", accent: "#c8553d",
-    description: "Reinterpreting the Spanish sobremesa through collectible art on 250ml glass bottles. Ready-to-drink beverages are dominated by massive, impersonal graphics; these bottles are conceived as oil paintings, with handmade strokes and organic typography.",
-    longDescription: "Brand identity and packaging design for a bottled ready-to-drink Tinto de Verano, celebrating shared moments, casual gatherings, and contemporary artistic aesthetics.The belief that beauty should inhabit everyday rituals. Reinterpreting the relaxed Spanish sobremesa through the lens of collectible art, bringing tactile intimacy to casual daytime drinking.A series of bottled wines conceived as tangible, pocket-sized art objects. Featuring expressive oil-paint brushstrokes and painterly warmth, each bottle invites contemplation and celebrates art as a natural, accessible part of daily life.",
-    mainImage: "/images/Sobremesa10.jpg", galleryImages: [ "/images/Sobremesa1.jpeg",   "/images/Sobremesa6.jpeg", "/images/Sobremesa7.jpg", "/images/Sobremesa9.jpg", "/images/Sobremesa12.png" , "/images/Sobremesa4.png", "/images/Sobremesa5.png",], x: 1060, y: 330, w: 110, links: ["gentle-encounters"] },
-  { id: 5, slug: "arke", title: "Arké", category: "Product & Social Media Design", year: "2025",
-    context: "Client · Arké, Barcelona", collaborators: "n/a", guidance: "n/a", accent: "#8a6bd1",
-    description: "Minimalist barefoot and ergonomic footwear. Visual identity, shoe boxes and packaging, color palette, a Kickstarter campaign (July 2025) and social media management.",
-    longDescription: "Arké designs barefoot shoes for everyday life, combining ergonomic biomechanics with thoughtful, minimalist design. Based in Barcelona, their approach focuses on creating footwear that allows people to move naturally without compromising style or comfort. I contributed to the brand by developing the visual identity, designing the sneaker boxes, defining the color palette, and managing the social media design and strategy.",
-    mainImage: "/images/arke1.jpg", galleryImages: [ "/images/arke2.png", "/images/arke3.jpg", "/images/arke6.jpg"], x: 940, y: 640, w: 120, links: ["condor-ai", "gahan-pettit"] },
-  { id: 6, slug: "condor-ai", title: "Condor.ai", category: "Branding & Visual Design", year: "2025",
-    context: "Client · Condor.ai", collaborators: "n/a", guidance: "n/a", accent: "#2bb3b3",
-    description: "A visual system and brand identity for an AI-powered platform.",
-    longDescription: "Developed the end-to-end brand identity system for Condor.ai to build an institutional, authoritative visual presence aimed at expanding their client base. The project encompassed the creation of a original logotype, a refined color palette, and clear visual guidelines engineered to drive consistency and trust across all strategic touchpoints.",
-    mainImage: "/images/condorlogo.jpg", galleryImages: [ "/images/condor2.png", "/images/condor3.png", "/images/condor4.png", "/images/condor5.png"], x: 520, y: 800, w: 110, links: ["gentle-encounters"] },
-  { id: 7, slug: "gentle-encounters", title: "Gentle Encounters", category: "Print & Illustration", year: "2026",
-    context: "Private commission", collaborators: "Eloísa Bosch", guidance: "n/a", accent: "#e07aa5",
+  { slug: "a-donde-voy-llevo-mi-bandera", title: "A dónde voy llevo mi bandera", category: "Exhibition & Experience Design · Illustration", year: "2025",
+    context: "University · Universidad Torcuato Di Tella, for MUNTREF", team: "Bosch · Mirazon · Saráchaga",
+    role: "Illustration (all illustrations are mine), narrative, concept and 3D modeling",
+    description: "Reimagining the Argentine diaspora through “exacerbated argentinidad”. A phygital museum system that represents the tensions of contemporary migration without clichés: a QR “Track & Collect” game, tactile stations, sensor viewers, an interactive map and a sticker printing station.",
+    longDescription: "An immersive, phygital exhibition about the contemporary Argentine diaspora. By joining physical objects with digital interaction, the project looks at how national identity is rebuilt, performed and kept alive far from home. The museum visit becomes a narrative game that invites visitors to discover the stories, objects and cultural tensions behind what it means to be Argentine in a globalized world.",
+    mainImage: I("ADVYMB9"),
+    galleryImages: ["ADVYMB10", "ADVYMB11", "ADVYMB12", "ADVYMB13", "ADVYMB14", "ADVYMB15", "ADVYMB16", "ADVYMB17", "ADVYMB18", "ADVYMB1", "ADVYMB2", "ADVYMB4", "ADVYMB7"].map(I) },
+
+  { slug: "sobremesa", title: "Sobremesa", category: "Branding · Packaging · Digital illustration", year: "2026",
+    context: "Self-initiated · independent self-exploration", role: "Concept, digital paintings, branding and packaging",
+    description: "Reinterpreting the Spanish sobremesa through collectible art on 250 ml glass bottles. Ready-to-drink beverages are dominated by loud, impersonal graphics; these labels are digital paintings with expressive brushstrokes and organic typography.",
+    longDescription: "Brand identity and packaging for a bottled ready-to-drink Tinto de Verano that celebrates shared moments and slow daytime gatherings. Each bottle is treated as a small, collectible art object: the labels are digital paintings with a painterly, oil-like stroke, so that art becomes a natural part of an everyday ritual.",
+    mainImage: I("Sobremesa10"),
+    galleryImages: ["Sobremesa1-jpeg", "Sobremesa6-jpeg", "Sobremesa7", "Sobremesa9", "Sobremesa12", "Sobremesa4", "Sobremesa5"].map(I) },
+
+  { slug: "pasito", title: "Pasito", category: "Packaging · App design", year: "",
+    context: "Real project · produced in China", role: "Packaging (communication, materials and design) and app design",
+    description: "Packaging for Pasito Health Band, an activity wristband. The box was sent to production in China.",
+    longDescription: "I designed the packaging for Pasito Health Band and worked on the Pasito app. For the box I defined what the packaging had to communicate, its materials and its design: a sliding drawer with a cardboard tray that holds the band, the module and the cable, a front with the line drawing of the product, a back that sums up the features and links to the app, and the line “Cada pasito cuenta.” (Every little step counts).",
+    mainImage: I("pasito-render-1"),
+    galleryImages: ["pasito-render-2", "pasito-render-3"].map(I) },
+
+  { slug: "espacio-hila", title: "Espacio Hila", category: "Social media · Posters · Template system", year: "2026",
+    context: "Freelance · Espacio Hila, Madrid", role: "Editable template system in Canva, social media pieces and posters",
+    description: "A mental health space created by two Argentine psychologists in Madrid, offering therapy and support for therapists.",
+    longDescription: "I designed a system of editable Canva templates so the team can communicate their activities with a coherent, warm and professional identity. Archive photography, collage and open questions carry their way of looking at relationships, care and community across stories, posts and posters.",
+    mainImage: I("hila-post-3"),
+    galleryImages: ["hila-story-1", "hila-story-2", "hila-story-3", "hila-story-4", "hila-post-1", "hila-post-5", "hila-post-6", "hila-poster"].map(I) },
+
+  { slug: "pulse", title: "Pulse", category: "Branding · App UX/UI · Communication", year: "2025",
+    context: "Client · Pulse", role: "Brand identity, app UX/UI and launch communication",
+    description: "A platform that connects users, organizers and ambassadors with outdoor adventure sports. Visual brand, logotype, app UX/UI and communication. The app is live on the App Store.",
+    longDescription: "I developed the full brand identity for Pulse — name, logo and visual system — and designed the app, along with the pieces needed for its launch. The goal: make getting into an outdoor adventure as easy as a tap. The app was developed and launched on the App Store.",
+    mainImage: I("pulse1"),
+    galleryImages: ["pulse3", "pulse4", "pulse5"].map(I) },
+
+  { slug: "arke", title: "Arké", category: "Packaging · Social media · Campaign", year: "2025",
+    context: "Client · Arké, Barcelona", role: "Packaging, color palette, Kickstarter campaign and social media (the name and logo were defined by the brand)",
+    description: "Minimalist barefoot and ergonomic footwear from Barcelona. Shoe boxes and packaging, color palette, a Kickstarter campaign (July 2025) and social media.",
+    longDescription: "Arké designs barefoot shoes for everyday life, combining ergonomic biomechanics with minimalist design. I worked on the shoe boxes and packaging, defined the color palette, and handled the design and strategy of the Kickstarter campaign and social media. The campaign was launched in July 2025 and did well.",
+    mainImage: I("arke1"),
+    galleryImages: ["arke2", "arke3", "arke6"].map(I) },
+
+  { slug: "catalizadores", title: "Catalizadores", category: "Experimental fashion · AI campaign", year: "2026",
+    context: "University · VirtualLab, E_02", role: "Concept, art direction, AI image generation and 3D modeling",
+    description: "An AI-generated fashion campaign: sculptural garments inspired by the fluidity of water, placed in natural settings.",
+    longDescription: "A short campaign of sculptural garments inspired by water, generated with AI tools such as Google Flow. The images were then modeled in 3D to study the curves and folds of the pieces.",
+    mainImage: I("Catalizadores2"),
+    galleryImages: ["Catalizadores1", "Catalizadores3", "Catalizadores4", "Catalizadores5", "Catalizadores6", "Catalizadores7", "Catalizadores8"].map(I) },
+
+  { slug: "gahan-pettit", title: "Gahan Pettit", category: "Textile prints · Graphic design", year: "2023–2025",
+    context: "Freelance · @gahanpettit", role: "Textile prints and graphic pieces",
+    description: "Prints and illustrations for a children's clothing brand.",
+    longDescription: "An ongoing freelance collaboration with the children's clothing brand Gahan Pettit, designing textile prints and graphic pieces. Playful, hand-drawn motifs that work for kids and parents and stay true to the brand.",
+    mainImage: I("Gahanpetit1"),
+    galleryImages: ["Gahanpetit4", "Gahanpetit5", "Gahanpetit7", "Gahanpetit8", "Gahanpetit9", "Gahanpetit10", "Gahanpetit12"].map(I) },
+
+  { slug: "gentle-encounters", title: "Gentle Encounters", category: "Print · Illustration", year: "2026",
+    context: "Private commission", role: "Illustration and editorial packaging",
     description: "A limited series of ink postcards on handcrafted textured paper, exploring childhood memories and everyday tenderness.",
-    longDescription: "A custom series of illustrated postcards exploring childhood memories, warmth, and companionship through expressive ink-style drawings.Translating everyday tender moments into timeless stationery pieces, focusing on tactile paper textures and raw, handcrafted linework.A limited, personalized set of postcards blending expressive traditional aesthetics with thoughtful, clean editorial packaging ready to send or collect.",
-    mainImage: "/images/postcard4.jpg", galleryImages: ["/images/postcard2.jpg" , "/images/Postcard5.jpg", "/images/postcard3.jpg"], x: 1180, y: 840, w: 110, links: [] },
-  { id: 8, slug: "gahan-pettit", title: "Gahan Pettit", category: "Textile & Graphic Design", year: "2024",
-    context: "Client · @gahanpettit", collaborators: "n/a", guidance: "n/a", accent: "#e0a526",
-    description: "A series of playful prints and illustrations for children's clothing.",
-   longDescription: "The project focuses on creating unique prints for children’s clothing under the Gahan Pettit brand, emphasizing playful and artistic visuals.I developed a series of designs and prints for children’s apparel, drawing inspiration from vibrant and imaginative themes that would resonate with both kids and parents.Using Adobe Illustrator and Photoshop, I created multiple designs that were playful yet elegant. The designs were carefully crafted to align with the brand’s identity while making the clothing visually appealing to children.",
-    mainImage: "/images/Gahanpetit1.jpg", galleryImages: ["/images/Gahanpetit4.jpg", "/images/Gahanpetit5.jpg" , "/images/Gahanpetit7.jpg" , "/images/Gahanpetit8.jpg", "/images/Gahanpetit9.jpg" ,"/images/Gahanpetit10.jpg"  , "/images/Gahanpetit12.jpg"], x: 260, y: 640, w: 110, links: ["pulse"] },
-  { id: 9, slug: "catalizadores", title: "Catalizadores", category: "Experimental Fashion, 3D Morphology & Generative AI", year: "2026",
-    context: "University · VirtualLab, E_02", collaborators: "Eloísa Bosch", guidance: "n/a", accent: "#e3262e",
-    description: "An experimental collection and short haute-couture campaign: sculptural garments inspired by the fluidity of water, taken from nothing to everything, from the unreal to the concrete, with 3D modeling and generative AI.",
-    longDescription: "Sintonía Biomórfica is a collection and short haute-couture campaign developed from scratch at the crossing of experimental fashion (Schiaparelli, Loewe), the rigor of product design and contemporary fabrication technologies. I conceived and designed sculptural garments inspired by the fluidity and movement of water, materialized through 3D modeling and AI generation. The process integrates the creation of the garments, their resolution as viable three-dimensional products, and the creative direction of a hyperrealistic editorial campaign built with an iterative workflow in generative tools such as Google Flow, taking the pieces out of the studio and into a natural setting. The project shows that AI does not end at ephemeral images: radial folds and organic structures conceived digitally become 3D meshes, vector geometries and models ready to be manufactured, through additive manufacturing and technical pattern-making. AI acts as a catalyst that accelerates morphological exploration and turns the designer from a sketch artist into a curator of formal rule systems, in a territory where the digital and the tactile stop competing and merge into a new language of contemporary luxury.",
-    mainImage: "/images/Catalizadores2.jpg", galleryImages: ["/images/Catalizadores1.jpg", "/images/Catalizadores3.jpg", "/images/Catalizadores4.jpg", "/images/Catalizadores5.jpg", "/images/Catalizadores6.jpg", "/images/Catalizadores7.jpg", "/images/Catalizadores8.jpg"], x: 1280, y: 560, w: 120, links: ["sobremesa", "arke"] },
+    longDescription: "A custom series of illustrated postcards about childhood memories, warmth and companionship, drawn with an expressive ink line. Everyday tender moments turned into stationery, with attention to paper texture and a clean editorial packaging, ready to send or collect.",
+    mainImage: I("postcard4"),
+    galleryImages: ["postcard2", "Postcard5", "postcard3"].map(I) },
+
+  { slug: "financity", title: "Financity", category: "UX/UI", year: "2025",
+    context: "University",
+    description: "Learn by doing, not explaining. A gamified financial simulation app for 16–23 year-olds, with an avatar that reflects each decision through The Arcade (mini-games), The Bank (risk-free investing) and The Shop (conscious spending).",
+    longDescription: "Financity turns financial education into a simulation game. Instead of jargon, young people manage money, invest and save through an avatar in a visual, gamified world — a learning-by-doing tool to build healthy habits in a risk-free environment.",
+    mainImage: I("financity1"),
+    galleryImages: ["financity2", "financity3", "financity4"].map(I) },
+
+  { slug: "condor-ai", title: "Condor.ai", category: "Branding · Templates", year: "2025",
+    context: "Client · Condor.ai", role: "Brand identity and template system",
+    description: "Brand identity and a set of templates for an AI platform.",
+    longDescription: "A visual identity for Condor.ai — logotype, color palette and visual guidelines — and a set of templates the team fills in with its own content (that’s why some of them still show placeholder text).",
+    mainImage: I("condorlogo"),
+    galleryImages: ["condor2", "condor3", "condor4", "condor5"].map(I) },
 ];
 
 export const getProject = (slug) => projects.find((p) => p.slug === slug);

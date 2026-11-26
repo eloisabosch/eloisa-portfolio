@@ -1,13 +1,15 @@
 :root{--bg:#ffffff;--ink:#1a1714;--mute:#9b968c;--line:#d9d4c8;--curtain:#2b1a0d;--err:#d12c2c;--pad:clamp(14px,2vw,28px)}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--bg);color:var(--ink);font-family:var(--font),Georgia,serif;font-size:15px;line-height:1.45}
+html,body{background:var(--bg);color:var(--ink);font-family:var(--font),system-ui,sans-serif;font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
-.header{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;padding:var(--pad);pointer-events:none}
-.header a,.header nav{pointer-events:auto}.header nav{display:flex;gap:18px}
+.header{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:var(--pad);background:var(--bg)}
+.header nav{display:flex;gap:18px;white-space:nowrap}.header>a{white-space:nowrap}
 .header a{transition:color .25s}.header a.dim{color:var(--mute)}.header a:hover{color:var(--mute)}
 .page{padding:90px var(--pad) 40px;min-height:100vh}
+:focus-visible{outline:1px solid var(--ink);outline-offset:3px}
 .footer{display:flex;justify-content:space-between;padding:var(--pad);font-size:13px}
 .curtain{position:fixed;inset:0;z-index:100;background:var(--curtain);transform:translateY(100%);pointer-events:none}
+.curtain:not(.in):not(.out){visibility:hidden}
 .curtain.in{transform:translateY(0);transition:transform .6s cubic-bezier(.7,0,.2,1);pointer-events:auto}
 .curtain.out{transform:translateY(-100%);transition:transform .6s cubic-bezier(.7,0,.2,1)}
 .map{position:fixed;inset:0;overflow:hidden;cursor:grab;touch-action:none;user-select:none}
@@ -34,5 +36,5 @@ a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
 .err{color:var(--err);font-size:12px;margin-top:3px}.dots{display:flex;gap:6px;justify-content:center;margin:28px 0 18px}
 .dots i{width:5px;height:5px;border-radius:50%;background:var(--line)}.dots i.on{background:var(--ink)}
 .btn{background:none;border:0;font:inherit;cursor:pointer;padding:4px 8px}.btn:hover{color:var(--mute)}
-@media(max-width:760px){.grid2,.about,.meta{grid-template-columns:1fr}.blurb{max-width:60vw}.zoom{top:auto;bottom:90px;transform:none}}
+@media(max-width:760px){.header{font-size:13px}.header nav{gap:12px}.grid2,.about,.meta{grid-template-columns:1fr}.blurb{max-width:60vw}.zoom{top:auto;bottom:90px;transform:none}}
 @media(prefers-reduced-motion:reduce){*{transition:none!important}}
