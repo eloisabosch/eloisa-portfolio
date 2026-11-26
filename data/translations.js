@@ -100,7 +100,7 @@ export const esProjects = {
     context: "Cliente · Arké, Barcelona",
     role: "Packaging, paleta de color, campaña de Kickstarter y redes",
     description: "Packaging, paleta de color, redes y una campaña de Kickstarter para una marca de calzado barefoot de Barcelona.",
-    longDescription: "Arké hace zapatillas barefoot minimalistas para el día a día, pensadas para moverse de forma natural. El nombre y el logo ya estaban definidos; yo me ocupé de todo lo que se construyó a su alrededor.\n\nDiseñé las cajas y el packaging de las zapatillas, definí la paleta de color y llevé el diseño y la estrategia de las redes y de la campaña de Kickstarter, lanzada en julio de 2025, a la que le fue bien.",
+    longDescription: "Arké hace zapatillas barefoot minimalistas para el día a día, pensadas para moverse de forma natural. El nombre y el logo ya estaban definidos; yo me ocupé de todo lo que se construyó a su alrededor.\n\nDiseñé las cajas y el packaging de las zapatillas, definí la paleta de color y llevé el diseño y la estrategia de las redes y de la campaña de Kickstarter, lanzada en julio de 2025, a la que le fue bien.\n\nLa caja lleva un patrón de líneas topográficas que habla del terreno y del movimiento; lo dibujé y armé los troqueles para producción. Para la campaña diseñé las piezas que llevaron frases como “Back to the origin” y “Coming soon” a la fotografía de lanzamiento, entre el bosque y la ciudad.",
   },
   catalizadores: {
     category: "Moda experimental · Campaña con IA",
@@ -114,7 +114,7 @@ export const esProjects = {
     context: "Freelance · @gahanpettit",
     role: "Estampas textiles y piezas gráficas",
     description: "Estampas textiles y piezas gráficas para una marca de ropa infantil.",
-    longDescription: "Una colaboración freelance de ida y vuelta con Gahan Pettit, entre piezas gráficas y estampas textiles. Pequeños personajes ilustrados, hongos y rayas con un tono lúdico pero delicado, pensados para funcionar en prendas para chicos y conquistar también a los grandes.",
+    longDescription: "Una colaboración freelance de ida y vuelta con Gahan Pettit, entre piezas gráficas y estampas textiles. Pequeños personajes ilustrados, hongos y rayas con un tono lúdico pero delicado, pensados para funcionar en prendas para chicos y conquistar también a los grandes.\n\nEn noviembre de 2025 diseñé una nueva colección de estampas: patrones más densos y con más color, hechos de flores, rombos, estrellas y cuadros.",
   },
   "gentle-encounters": {
     category: "Impresión · Ilustración",

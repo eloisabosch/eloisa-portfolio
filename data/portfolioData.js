@@ -75,7 +75,7 @@ export const projects = [
     description: "A tinto de verano that treats every bottle as a small, collectible painting: a slower, more personal take on the ready-to-drink shelf.",
     longDescription: "Ready-to-drink beverages usually rely on loud, impersonal graphics. Sobremesa goes the other way. It borrows the Spanish sobremesa, the unhurried time spent at the table after a meal, and turns each 250 ml bottle into a piece of art.\n\nThe labels are digital paintings with expressive, oil-like brushstrokes and organic lettering. Each one works on its own and as part of a series to collect. An independent, self-exploratory project in which I developed the concept, the paintings, the brand and the packaging.",
     mainImage: I("Sobremesa10"),
-    galleryImages: ["Sobremesa1-jpeg", "Sobremesa6-jpeg", "Sobremesa7", "Sobremesa9", "Sobremesa12", "Sobremesa4", "Sobremesa5"].map(I) },
+    galleryImages: ["Sobremesa1-jpeg", "Sobremesa6-jpeg", "Sobremesa7", "Sobremesa9", "Sobremesa4"].map(I) },
 
   { slug: "pasito", title: "Pasito", category: "Packaging · App design", year: "2026",
     context: "Real product · produced in China", role: "Packaging (communication, materials and design) and app design",
@@ -101,9 +101,9 @@ export const projects = [
   { slug: "arke", title: "Arké", category: "Packaging · Social media · Campaign", year: "2025",
     context: "Client · Arké, Barcelona", role: "Packaging, color palette, Kickstarter campaign and social media",
     description: "Packaging, color palette, social media and a Kickstarter campaign for a barefoot footwear brand from Barcelona.",
-    longDescription: "Arké makes minimalist barefoot shoes for everyday life, designed around natural movement. The name and logo were already defined; I took care of everything built around them.\n\nI designed the shoe boxes and packaging, defined the color palette and led the design and strategy of the brand’s social media and its Kickstarter campaign, launched in July 2025, which did well.",
+    longDescription: "Arké makes minimalist barefoot shoes for everyday life, designed around natural movement. The name and logo were already defined; I took care of everything built around them.\n\nI designed the shoe boxes and packaging, defined the color palette and led the design and strategy of the brand’s social media and its Kickstarter campaign, launched in July 2025, which did well.\n\nThe box carries a topographic line pattern that speaks of terrain and movement; I drew it and built the dielines for production. For the campaign I designed the pieces that brought lines like “Back to the origin” and “Coming soon” onto the launch photography, moving between forest and city.",
     mainImage: I("arke1"),
-    galleryImages: ["arke2", "arke3", "arke6"].map(I) },
+    galleryImages: ["arke2", "arke-troquel-1", "arke-troquel-2", "arke-patron", "arke-campana-bosque", "arke-campana-ciudad", "arke-campana-calle", "arke-campana-pasto", "arke3", "arke6"].map(I) },
 
   { slug: "catalizadores", title: "Catalizadores", category: "Experimental fashion · AI campaign", year: "2026",
     context: "University · VirtualLab, E_02", role: "Concept, art direction, AI image generation and 3D modeling",
@@ -115,9 +115,9 @@ export const projects = [
   { slug: "gahan-pettit", title: "Gahan Pettit", category: "Textile prints · Graphic design", year: "2023–2025",
     context: "Freelance · @gahanpettit", role: "Textile prints and graphic pieces",
     description: "Textile prints and graphic pieces for a children’s clothing brand.",
-    longDescription: "An ongoing freelance collaboration with Gahan Pettit, moving back and forth between graphic pieces and textile prints. Small illustrated characters, mushrooms and stripes with a playful but delicate tone, designed to work on children’s garments and to win over their parents too.",
+    longDescription: "An ongoing freelance collaboration with Gahan Pettit, moving back and forth between graphic pieces and textile prints. Small illustrated characters, mushrooms and stripes with a playful but delicate tone, designed to work on children’s garments and to win over their parents too.\n\nIn November 2025 I designed a new collection of prints: denser, more colorful patterns built from flowers, diamonds, stars and checks.",
     mainImage: I("Gahanpetit1"),
-    galleryImages: ["Gahanpetit4", "Gahanpetit5", "Gahanpetit7", "Gahanpetit8", "Gahanpetit9", "Gahanpetit10", "Gahanpetit12"].map(I) },
+    galleryImages: ["Gahanpetit4", "Gahanpetit5", "Gahanpetit7", "Gahanpetit8", "Gahanpetit9", "Gahanpetit10", "Gahanpetit12", "gahan-estampas-2025-a", "gahan-estampas-2025-b"].map(I) },
 
   { slug: "gentle-encounters", title: "Gentle Encounters", category: "Print · Illustration", year: "2026",
     context: "Private commission", role: "Illustration and editorial packaging",
