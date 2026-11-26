@@ -13,7 +13,6 @@ export default function ProjectCard({ project, hidden = false }) {
         {alt && <img className="b" src={alt} alt="" draggable={false} loading="lazy" decoding="async" />}
       </div>
       <span className="cap">{project.title}</span>
-      <span className="cat">{project.category}</span>
     </CurtainLink>
   );
 }

@@ -1,6 +1,6 @@
 :root{--bg:#ffffff;--ink:#1a1714;--mute:#9b968c;--line:#d9d4c8;--curtain:#2b1a0d;--err:#d12c2c;--pad:clamp(14px,2vw,28px)}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{background:var(--bg);color:var(--ink);font-family:var(--font),system-ui,sans-serif;font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
+html,body{background:var(--bg);color:var(--ink);font-family:var(--font),Georgia,serif;font-size:15px;line-height:1.45;-webkit-font-smoothing:antialiased}
 a{color:inherit;text-decoration:none}img{display:block;max-width:100%}
 .header{position:fixed;top:0;left:0;right:0;z-index:30;display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding:var(--pad);background:var(--bg)}
 .header nav{display:flex;gap:18px;white-space:nowrap}.header>a{white-space:nowrap}

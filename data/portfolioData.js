@@ -77,7 +77,7 @@ export const projects = [
     mainImage: I("Sobremesa10"),
     galleryImages: ["Sobremesa1-jpeg", "Sobremesa6-jpeg", "Sobremesa7", "Sobremesa9", "Sobremesa12", "Sobremesa4", "Sobremesa5"].map(I) },
 
-  { slug: "pasito", title: "Pasito", category: "Packaging · App design", year: "",
+  { slug: "pasito", title: "Pasito", category: "Packaging · App design", year: "2026",
     context: "Real project · produced in China", role: "Packaging (communication, materials and design) and app design",
     description: "Packaging for Pasito Health Band, an activity wristband. The box was sent to production in China.",
     longDescription: "I designed the packaging for Pasito Health Band and worked on the Pasito app. For the box I defined what the packaging had to communicate, its materials and its design: a sliding drawer with a cardboard tray that holds the band, the module and the cable, a front with the line drawing of the product, a back that sums up the features and links to the app, and the line “Cada pasito cuenta.” (Every little step counts).",

@@ -8,7 +8,7 @@
 .case-top a:hover{color:var(--ink)}
 
 .case-head{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:16px;align-items:end;margin-bottom:40px}
-.case-head h1{grid-column:1/9;font-weight:400;font-size:clamp(36px,5.6vw,84px);line-height:.98;letter-spacing:-.03em;text-wrap:balance}
+.case-head h1{grid-column:1/9;font-weight:400;font-size:clamp(36px,5.6vw,84px);line-height:1;letter-spacing:-.02em;text-wrap:balance}
 .case-head p{grid-column:9/13;font-size:15px;line-height:1.45;max-width:46ch}
 
 .case-hero{margin:0 calc(var(--pad) * -1);width:calc(100% + var(--pad) * 2)!important}
@@ -29,8 +29,8 @@
 
 .case-next{display:grid;grid-template-columns:1fr auto;align-items:end;gap:8px 24px;border-top:1px solid var(--line);padding:32px 0 48px}
 .case-next .mute{grid-column:1/-1;font-size:13px}
-.case-next-title{font-size:clamp(32px,5vw,72px);line-height:1;letter-spacing:-.03em;transition:color .3s}
-.case-next img{width:clamp(120px,16vw,240px);aspect-ratio:4/5;object-fit:cover;border-radius:10px}
+.case-next-title{font-size:clamp(32px,5vw,72px);line-height:1;letter-spacing:-.02em;transition:color .3s}
+.case-next img{width:clamp(120px,16vw,240px);aspect-ratio:4/5;object-fit:cover;border-radius:18px}
 .case-next:hover .case-next-title{color:var(--mute)}
 
 .lb{position:fixed;inset:0;z-index:200;background:#000;display:flex;align-items:center;justify-content:center}

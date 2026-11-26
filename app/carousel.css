@@ -2,29 +2,28 @@
 html.lock,html.lock body{height:100%;overflow:hidden;overscroll-behavior:none}
 .home{height:100svh;display:flex;flex-direction:column}
 body .proj{flex:1;display:flex;flex-direction:column;min-height:0;padding-bottom:0}
-.proj-intro{font-weight:400;font-size:clamp(22px,2.7vw,40px);line-height:1.12;letter-spacing:-.02em;max-width:min(820px,92vw);text-wrap:balance}
-.proj-intro em{font-family:var(--serif),Georgia,serif;font-style:italic;font-size:1.06em;line-height:0;letter-spacing:-.01em}
-.proj-bottom{margin-top:auto;padding-top:28px}
-.proj-label{display:flex;justify-content:space-between;align-items:baseline;font-size:13px;margin-bottom:12px}
-.proj-label .hint{color:var(--mute)}
+.proj-intro{font-weight:400;font-size:clamp(15px,1.35vw,20px);line-height:1.3;max-width:min(640px,85vw)}
+.proj-intro em{font-style:italic}
+.proj-bottom{margin-top:auto;padding-top:60px}
+.proj-label{font-size:13px;margin-bottom:12px}
 .home .footer{padding-top:18px}
 
 .rail{overflow:hidden;margin:0 calc(var(--pad) * -1);cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;outline:0}
 .rail.dragging{cursor:grabbing}.rail.dragging .card{pointer-events:none}
 .rail:focus-visible{box-shadow:inset 0 0 0 1px var(--ink)}
 .track{display:flex;width:max-content;will-change:transform;padding-left:var(--pad)}
-.card{flex:0 0 auto;display:block;width:clamp(210px,min(21vw,calc((100svh - 330px) * .8)),330px);margin-right:16px;-webkit-user-drag:none}
-.thumb{position:relative;aspect-ratio:4/5;border-radius:10px;overflow:hidden;background:#f1efe9}
+.card{flex:0 0 auto;display:block;width:clamp(190px,min(21vw,calc((100svh - 300px) * .8)),330px);margin-right:16px;-webkit-user-drag:none}
+.thumb{position:relative;aspect-ratio:4/5;border-radius:18px;overflow:hidden;background:#ece8de}
 .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .5s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
 .thumb .b{opacity:0}
 .thumb .ph{position:absolute;inset:0;aspect-ratio:auto}
 .card:hover .b{opacity:1}
-.card:hover .thumb img{transform:scale(1.04)}
-.cap{display:block;margin-top:10px;font-size:14px;color:var(--ink)}
-.cat{display:block;margin-top:2px;font-size:13px;color:var(--mute);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.card:hover .thumb img{transform:scale(1.05)}
+.cap{display:block;margin-top:10px;font-size:14px;color:var(--mute);transition:color .3s}
+.card:hover .cap,.card:focus-visible .cap{color:var(--ink)}
 
 @media(max-width:760px){
-  .proj-intro{font-size:clamp(24px,7.4vw,32px)}
+  .proj-intro{font-size:17px}
   .card{width:min(72vw,calc((100svh - 360px) * .8))}
 }
 @media(prefers-reduced-motion:reduce){.thumb img{transition:none}}

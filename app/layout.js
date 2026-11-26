@@ -4,16 +4,14 @@ import { person } from "../data/portfolioData";
 import "./globals.css";
 import "./uniform.css";
 
-// Tipografía: Instrument Sans para todo el sitio + Newsreader itálica como acento.
-// Para volver a la serif original en todo el sitio: cambiá --font por --serif en globals.css.
-// Fuentes servidas desde el propio sitio (app/fonts), licencia SIL Open Font License.
-const sans = localFont({ src: "./fonts/InstrumentSans-Variable.woff2", weight: "400 700", variable: "--font", display: "swap" });
-const serif = localFont({
+// Tipografía: Newsreader en todo el sitio (como el portfolio original), itálica para los acentos.
+// Fuente servida desde el propio sitio (app/fonts), licencia SIL Open Font License.
+const font = localFont({
   src: [
     { path: "./fonts/Newsreader-Regular.woff2", weight: "400", style: "normal" },
     { path: "./fonts/Newsreader-Italic.woff2", weight: "400", style: "italic" },
   ],
-  variable: "--serif", display: "swap",
+  variable: "--font", display: "swap",
 });
 
 const SITE = "https://eloisa-portfolio.vercel.app";
@@ -33,7 +31,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className={`${sans.variable} ${serif.variable}`}>
+    <html lang="en" className={font.variable}>
       <body><Shell>{children}</Shell></body>
     </html>
   );

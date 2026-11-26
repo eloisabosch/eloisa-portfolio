@@ -22,10 +22,7 @@ export default function Home() {
       <main className="page proj">
         <h1 className="proj-intro"><Rich text={person.projectsIntro} /></h1>
         <div className="proj-bottom">
-          <div className="proj-label">
-            <p>{ui.selectedWork}</p>
-            <p className="hint">{ui.dragHint}</p>
-          </div>
+          <p className="proj-label">{ui.selectedWork}</p>
           <ProjectCarousel projects={projects} />
         </div>
       </main>
