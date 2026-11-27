@@ -23,6 +23,7 @@ export const person = {
   education: [
     "Universidad Torcuato Di Tella — Bachelor in Design (2023–2026)",
     "Universidad Carlos III de Madrid — Erasmus, Film, Television and Media Studies (2025–2026)",
+    "Google — Foundations of User Experience (UX) Design, Coursera (2026)",
   ],
   skills: ["Adobe Photoshop", "Adobe Illustrator", "Rhino 7", "Adobe After Effects", "Keyshot", "Figma", "Framer", "Visual Code"],
   languages: ["Spanish (Native)", "English (Advanced)"],
@@ -71,7 +72,7 @@ export const projects = [
     galleryImages: ["ADVYMB10", "ADVYMB11", "ADVYMB12", "ADVYMB13", "ADVYMB14", "ADVYMB15", "ADVYMB16", "ADVYMB17", "ADVYMB18", "ADVYMB1", "ADVYMB2", "ADVYMB4", "ADVYMB7"].map(I) },
 
   { slug: "pam", title: "PAM — Public Art Museum", category: "Brand identity · App UX/UI · Responsive web", year: "2026",
-    context: "Academic project", role: "Brand identity, UX architecture, design system, app and web UI, animated prototype",
+    context: "Course project · Google UX Design Certificate, Coursera", role: "Brand identity, UX architecture, design system, app and web UI, animated prototype",
     description: "Identity, app and responsive website for a public museum of contemporary art: discover what’s on, plan the visit and book it in five steps.",
     longDescription: "The brief asked for an app and a responsive website for a public art museum: advertise exhibitions and events, share visitor information and let people book a visit. I started by building the institution itself, PAM, a museum that says “art is for everyone”.\n\nThe identity, Open Door, draws the logotype from three modules: a half-disc, a triangle and an arch. The A carries an open door as its counter, because a public museum is always open. The same modules become patterns, pictograms, photo masks and motion, and each exhibition takes its own colour from a palette checked against WCAG AA contrast.\n\nThe app is editorial where it can be and predictable where it has to be: overlapping posters and serif titles to discover, and a five-step booking with no account, visible progress and every choice editable before confirming. I designed it in Figma with variables, interactive components and an animated prototype, then adapted it to tablet and desktop.\n\nPAM, its programme and its artworks are fictional; the photography is AI-generated.",
     mainImage: I("pam-cover"),

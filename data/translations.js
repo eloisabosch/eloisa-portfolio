@@ -35,6 +35,7 @@ export const esPerson = {
   education: [
     "Universidad Torcuato Di Tella — Licenciatura en Diseño (2023–2026)",
     "Universidad Carlos III de Madrid — Erasmus, Cine, Televisión y Estudios de Medios (2025–2026)",
+    "Google — Fundamentos del Diseño de Experiencia de Usuario (UX), Coursera (2026)",
   ],
   languages: ["Español (Nativo)", "Inglés (Avanzado)"],
 };
@@ -69,7 +70,7 @@ export const esProjects = {
   },
   pam: {
     category: "Identidad de marca · UX/UI de app · Web responsive",
-    context: "Proyecto académico",
+    context: "Proyecto de curso · Certificado Google UX Design, Coursera",
     role: "Identidad de marca, arquitectura UX, design system, UI de app y web, prototipo animado",
     description: "Identidad, app y sitio web responsive para un museo público de arte contemporáneo: descubrir qué hay, planificar la visita y reservarla en cinco pasos.",
     longDescription: "La consigna pedía una app y un sitio web responsive para un museo público de arte: comunicar exposiciones y eventos, dar información práctica y permitir reservar una visita. Empecé por construir la institución: PAM, un museo que dice “el arte es para todos”.\n\nLa identidad, Open Door, dibuja el logotipo con tres módulos: un semicírculo, un triángulo y un arco. La A lleva una puerta abierta como contraforma, porque un museo público siempre está abierto. Los mismos módulos se vuelven patrones, pictogramas, máscaras para la fotografía y movimiento, y cada exposición toma su propio color de una paleta verificada con contraste WCAG AA.\n\nLa app es editorial donde puede y predecible donde tiene que serlo: afiches superpuestos y títulos serif para descubrir, y una reserva en cinco pasos sin cuenta, con el progreso visible y cada elección editable antes de confirmar. La diseñé en Figma con variables, componentes interactivos y un prototipo animado, y después la adapté a tablet y desktop.\n\nPAM, su programación y sus obras son ficticios; la fotografía está generada con IA.",
